@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.s {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+            
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <style>
+            .score {font: 200px sans-serif; }
+        </style>
+        <svg id="canvas" width="600" height="600">
+            <line x1=300 x2=300 y1=0 y2=600 stroke="white"/>
+            <rect id="leftPaddle" x=50 y=40 width=15 height=60 fill="white"/>
+            <rect id="rightPaddle" x=535 y=40 width=15 height=60 fill="white"/>
+            <text id="leftScore" x=60 y=200 fill="white" class="score">0</text>
+            <text id="rightScore" x=350 y=200 fill="white" class="score">0</text>
+        </svg>
+    </body>
+</html>
